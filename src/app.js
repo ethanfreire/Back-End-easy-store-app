@@ -16,4 +16,8 @@ mongoose
 
 app.use(express.json());
 
+app.get("/api/test", () => {
+  console.log("this is a test");
+});
+
 module.exports = { app };
